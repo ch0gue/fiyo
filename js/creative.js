@@ -55,13 +55,24 @@
     }
   });
 
+  $('#carouselControls').on('slide.bs.carousel', function(e){
+    if (e.to == 1 && e.direction == "left") {
+      $("#carouselPrev").removeClass("invisible");
+      $("#carouselPrev").addClass("visible");
+    } else if (e.to == 0 && e.direction == "right") {
+      $("#carouselNext").removeClass("invisible");
+      $("#carouselNext").addClass("visible");
+      $("#carouselPrev").removeClass("visible");
+      $("#carouselPrev").addClass("invisible");
+    } else if (e.to == 3 && e.direction == "left") {
+      $("#carouselNext").removeClass("visible");
+      $("#carouselNext").addClass("invisible");
+    } else if (e.to == 2 && e.direction == "right") {
+      $("#carouselNext").removeClass("invisible");
+      $("#carouselNext").addClass("visible");
+    }
+  });
+
 })(jQuery); // End of use strict
 
-// function fix()
-// {
-//   setTimeout(() => {
-//     $(this).css("color", "#212529");
-//     $(this).css("background-color", "#6cd10e");
-//     $(this).css("box-shadow", "none");
-//   },5000)
-// }
+

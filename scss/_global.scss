@@ -53,6 +53,10 @@ hr.light {
   padding-bottom: 1rem;
 }
 
+.padding-carousel {
+  padding-bottom: 3rem;
+}
+
 .footer-padding {
   padding: 2.5rem;
 }
@@ -78,7 +82,8 @@ hr.light {
 }
 
 .small-width {
-  width: 12rem;
+  width: 16rem;
+  height: 11rem;
   margin: 1rem auto 1rem auto !important;
 }
 
@@ -93,3 +98,15 @@ hr.light {
 .small-text {
   font-size: small !important;
 }
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
+
+ .carousel-indicators li {
+   background-color: #6c757d !important;
+ }
