@@ -1,12 +1,12 @@
-// Styling for the portfolio section
-#portfolio {
+// Styling for the services section
+#services {
   .container-fluid {
     max-width: 1920px;
-    .portfolio-box {
+    .services-box {
       position: relative;
       display: block;
       margin: 4px 16px 16px 16px;
-      .portfolio-box-caption {
+      .services-box-caption {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -36,7 +36,7 @@
         }
       }
       &:hover {
-        .portfolio-box-caption {
+        .services-box-caption {
           opacity: 1;
         }
       }
